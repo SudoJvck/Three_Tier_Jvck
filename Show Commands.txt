@@ -1,0 +1,64 @@
+To verify the functionality of your three-tier network design in Cisco's Packet Tracer, you can use various show commands on different devices. Below is a list of show commands you can use along with brief descriptions:
+
+### General Network Information:
+1. **`show ip interface brief`**:
+   - Description: Displays a brief summary of the IP addresses assigned to all interfaces.
+
+2. **`show vlan brief`**:
+   - Description: Provides a summary of VLAN information, including VLAN IDs, names, and status.
+
+### Core Layer (Multilayer Switches):
+3. **`show ip route`**:
+   - Description: Displays the routing table, showing the known routes and next-hop information.
+
+4. **`show interfaces trunk`**:
+   - Description: Lists all trunk interfaces along with their VLAN information.
+
+### Distribution Layer (Multilayer Switches):
+5. **`show ip ospf neighbor`**:
+   - Description: Shows OSPF neighbor information, verifying OSPF adjacency.
+
+6. **`show vlan brief`**:
+   - Description: Verifies VLAN configurations on distribution layer switches.
+
+### Access Layer (Access Switches):
+7. **`show vlan brief`**:
+   - Description: Confirms VLAN configurations on access layer switches.
+
+8. **`show interfaces status`**:
+   - Description: Displays the status of all interfaces, indicating which are up or down.
+
+### Router Configuration:
+9. **`show ip nat translations`**:
+   - Description: Displays the active NAT translations, confirming PAT functionality.
+
+10. **`show ip dhcp binding`**:
+    - Description: Shows active DHCP bindings, confirming DHCP assignments.
+
+### Wireless Configuration:
+11. **`show dot11 associations`**:
+    - Description: Displays information about associated wireless clients.
+
+### OSPF Configuration:
+12. **`show ip ospf interface`**:
+    - Description: Provides information about OSPF interfaces and their states.
+
+### DHCP Server:
+13. **`show ip dhcp pool`**:
+    - Description: Displays DHCP pool information, confirming configured pools.
+
+### Default Routes:
+14. **`show ip route`**:
+    - Description: Verifies the presence of default routes on layer 3 devices.
+
+15. **`show access-lists`**:
+    - Description: Displays information about configured access lists.
+
+### Testing Connectivity:
+16. Use **`ping`** commands:
+    - Description: Verify end-to-end connectivity by pinging devices across different VLANs.
+
+17. **`traceroute`**:
+    - Description: Traces the route to a destination, confirming proper routing.
+
+These show commands can help you verify the configuration and functionality of your three-tier network design in Cisco's Packet Tracer. Adjust the commands as needed based on the specifics of your environment.
