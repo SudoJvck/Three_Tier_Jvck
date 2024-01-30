@@ -46,8 +46,8 @@ Detailed instructions are provided for configuring devices using Cisco's Packet 
 ### GitHub Repository Contents:
 
 1. **Commands.txt**: This file contains all the necessary commands for each device. You can copy and paste these commands into the command-line interface of your Cisco devices. Be cautious and adapt the commands to your specific environment.
-
 2. **README.md**: This document, providing an overview of the project, steps, and configurations. Refer to this README for a comprehensive understanding of the project.
+3. **Packet_Tracer_File.pkt**: The Packet Tracer file with the pre-configured network. You can open this file in Packet Tracer to explore the configured network, make changes, and test different scenarios.
 
 ### Conclusion
 
