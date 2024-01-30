@@ -1,0 +1,19 @@
+int range g1/0/3 - 8
+switchport mode trunk
+exit
+
+vlan 10
+name Sales
+vlan 20 
+name HR
+vlan 30
+name finance
+vlan 40
+name admin
+vlan 50
+name customer_care
+vlan 60
+name server_room
+exit
+
+do write

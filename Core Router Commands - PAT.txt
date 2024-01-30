@@ -1,0 +1,22 @@
+ip nat inside source list 1 int se0/3/0 overload 
+ip nat inside source list 1 int se0/3/1 overload
+access-list 1 permit 172.16.1.0 0.0.0.127
+access-list 1 permit 172.16.1.128 0.0.0.127
+access-list 1 permit 172.16.2.0 0.0.0.127
+access-list 1 permit 172.16.2.128 0.0.0.127
+access-list 1 permit 172.16.3.0 0.0.0.127
+access-list 1 permit 172.16.3.128 0.0.0.15
+
+int range g0/0-1
+ip nat inside 
+exit 
+
+int se0/3/0
+ip nat outside 
+exit 
+
+int se0/3/1
+ip nat outside
+exit 
+
+do write 

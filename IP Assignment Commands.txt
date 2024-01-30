@@ -1,0 +1,22 @@
+
+int range g1/0/1-2
+no switchport
+exit
+int g1/0/1
+ip address 172.16.3.145 255.255.255.252
+no shutdown
+exit
+int g1/0/2
+ip address 172.16.3.152 255.255.255.252
+no shutdown
+exit
+do write 
+exit 
+
+Int se0/3/0
+clock rate 64000
+ip address 195.36.17.1 255.255.255.252
+no shutdown 
+exit
+
+do write

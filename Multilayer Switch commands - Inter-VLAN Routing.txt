@@ -1,0 +1,36 @@
+int vlan 10
+no shutdown 
+ip address 172.16.1.1 255.255.255.128
+ip helper-address 172.16.3.130
+exit 
+
+int vlan 20
+no shutdown 
+ip address 172.16.1.129 255.255.255.128
+ip helper-address 172.16.3.130
+exit 
+
+int vlan 30
+no shutdown 
+ip address 172.16.2.1 255.255.255.128
+ip helper-address 172.16.3.130
+exit 
+
+int vlan 40
+no shutdown 
+ip address 172.16.2.129 255.255.255.128
+ip helper-address 172.16.3.130
+exit 
+
+int vlan 50
+no shutdown 
+ip address 172.16.3.1 255.255.255.128
+ip helper-address 172.16.3.130
+exit 
+
+int vlan 60
+no shutdown 
+ip address 172.16.3.129 255.255.255.240
+ip helper-address 172.16.3.130
+exit 
+

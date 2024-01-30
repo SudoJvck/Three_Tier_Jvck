@@ -1,0 +1,11 @@
+en
+conf t
+hostname Sales-SW
+banner motd #NO Unauthorized Access!!!#
+no ip domain-lookup
+line console 0
+passw cisco
+login
+exit
+enable password cisco
+service password-encryption
